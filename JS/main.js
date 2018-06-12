@@ -1,6 +1,5 @@
 $('#jumbotexth1').delay(1000).animate({
     top: '+50',
-
 }, 0).animate({
   opacity:'1',
   top: '0'
@@ -24,37 +23,50 @@ $('#jumbo').animate({
 },1000)
 
 
-$('#jumboButtonBox').delay(3000).animate({
+$('#jumboButtonBox').delay().animate({
   width: '0'
 },0).animate({
+
   opacity: '1',
   width: '100%'
 },1000)
 
-$('#jumbo-button-1').delay(3500).animate({
-    top: '+50',
+$('#jumbo-button-1').delay(1500).animate({
+    top: '+50'
 }, 0).animate({
   opacity:'1',
   top: '0'
 },1000);
 
-$('#jumbo-button-2').delay(3800).animate({
+$('#jumbo-button-2').delay(1800).animate({
     top: '+50',
 }, 0).animate({
   opacity:'1',
   top: '0'
 },1000)
 
-$('#jumbo-button-3').delay(4100).animate({
+$('#jumbo-button-3').delay(2100).animate({
     top: '+50',
 }, 0).animate({
   opacity:'1',
   top: '0'
 },1000)
 
-$('#jumbo-button-4').delay(4400).animate({
+$('#jumbo-button-4').delay(2400).animate({
     top: '+50',
 }, 0).animate({
   opacity:'1',
   top: '0'
 },1000)
+
+$("#about-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 500);
+});
+
+$("#skills-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#skills").offset().top
+    }, 500);
+});

@@ -44,20 +44,27 @@ body{
 }
 
 .jumbo-button-box{
-  background-color:#000000;
+  background-color:#111111;
   width:100%;
   display:flex;
-  justify-content:space-around;
+  justify-content: center;
   align-items:center;
   flex-wrap: wrap;
   text-align:center;
-  height: 10vh;
+  margin-bottom:0;
+  margin-top:auto;
 }
 
-
-.jumbo-button{
-  flex-basis:20%;
+.is-centered{
+  text-align:center;
+}
+.wrapper {
   position:relative;
+  min-height:100%;
+}
+.jumbo-button{
+  position:relative;  
+  margin: 25px 40px;
 }
 
 .is-transparent {
@@ -84,28 +91,18 @@ body{
 }
 
 .about-flex-box1{
-  width:30%;
+  width:50%;
+  text-align:center;
 }
 
 .about-flex-box2{
-  width:60%;
+  width:50%;
 }
 
-.project-flex-box1{
-  width:30%;
-}
-
-.project-flex-box2{
-  width:30%;
-}
-
-.project-flex-box3{
-  width:30%;
-}
 
 .button-outline {
   background-color:transparent;
-  border-radius: 10px;
+  border-radius: 15px;
   padding:10px;
   text-decoration: none;
   -webkit-transition-duration: 0.4s;
@@ -113,62 +110,206 @@ body{
   cursor: pointer;
 }
 
-.button-green{
-
-  border: 2px solid green;
-  color: green;
-
+.button-white{
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
 }
 
-.button-green:hover{
-
-  background-color: green;
-  color: white;
-
-}
-
-.button-blue{
-
-  border: 2px solid blue;
-  color: blue;
-
-}
-
-.button-blue:hover{
-
-  background-color: blue;
-  color: white;
-
-}
-.button-purple{
-
-  border: 2px solid purple;
-  color: purple;
-
-}
-
-.button-purple:hover{
-
-  background-color: purple;
-  color: white;
-
-}
-.button-yellow{
-
-  border: 2px solid yellow;
-  color: yellow;
-
-}
-
-.button-yellow:hover{
-
-  background-color: yellow;
-  color: white;
-
+.button-white:hover{
+  border: 2px solid #000000;
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 .about-section{
-  height: 100vh;
-  padding: 100px;
-  background-color: #e6e6e6;
+
+  background-color: #333333;
+  padding: 20px 100px 100px 100px;
+}
+
+.about-text{
+  color:white;
+  padding: 100px 120px 120px 100px;
+
+}
+.about-text h1{
+  text-align:center;
+  font-size:30px;
+  font-style:bold;
+  margin-bottom: 60px;
+}
+.about-text h2{
+  padding-top: 10px;
+  padding-bottom:30px;
+  font-size:20px;
+}
+
+.is-bolder{
+  font-weight:bolder;
+}
+
+.is-bold{
+  font-weight:bold;
+}
+
+.myImage{
+  height:100%;
+  width:100%;
+  padding: 10px 50px 50px 50px;
+}
+
+.skills-table{
+  display: flex;
+  background-color:white;
+  border: solid 1px;
+  border-color: #E6ECF8;
+  border-radius: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+  width:80%;
+  margin: 0 auto;
+  margin-top: -200px;
+  margin-bottom: 100px;
+  overflow: inherit ;
+
+
+}
+
+.skills-flexbox{
+
+  flex-basis:33%;
+  padding: 50px;
+
+
+}
+
+.skills-flexbox h1{
+
+  font-size:25px;
+  font-weight:bold;
+  padding-bottom: 10px;
+  border-bottom: solid #505160 2px;
+  margin-bottom :20px;
+
+}
+
+.skills-flexbox h2{
+
+  font-size:18px;
+  font-weight:bold;
+  padding-bottom: 10px;
+  margin-bottom :20px;
+
+}
+
+.skills-flexbox h2:after{
+
+  content: ':';
+
+}
+
+.skills-flexbox:not(:last-child){
+  border-right: solid 1px;
+  border-color: #E6ECF8;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+
+}
+ul li {
+
+  padding-bottom:10px;
+  list-style: none;
+
+}
+
+.skills-flexbox p {
+  line-height: 200%;
+  padding-bottom: 50px;
+
+}
+
+.projects-section h1 {
+  text-align: center;
+  margin-bottom: 50px
+}
+
+.projects-section .flex-container {
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.footer-container{
+
+  background-color:#333333;
+  overflow: auto;
+  color: white;
+}
+
+.footer-content{
+
+  text-align: center;
+  width:100%;
+}
+
+.social-media-container{
+  width:50%;
+  text-align:center;
+  margin:0 auto;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.social-media-container a{
+  text-decoration:none;
+}
+.float-left{
+  float:left;
+}
+
+.float-right{
+  float: right;
+}
+
+.fa {
+  font-size:20px;
+  border-radius:50%;
+  border: solid white 2px;
+  padding:20px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-right:10px;
+  margin-left:10px;
+}
+
+.fa-linkedin{
+  color:white;
+}
+
+.fa-linkedin:hover{
+  background-color:white;
+  color:#333333;
+}
+
+.fa-github{
+  color:white;
+}
+
+.fa-github:hover{
+  background-color:white;
+  color:#333333;
+}
+
+.fa-envelope{
+  color:white;
+}
+
+.fa-envelope:hover{
+  background-color:white;
+  color:#333333;
 }
