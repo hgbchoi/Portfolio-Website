@@ -10,6 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href = "CSS/styles.css" rel = "stylesheet" type ="text/css">
 </head>
@@ -47,9 +48,9 @@
   </div>
 
   <a id = "about" name = "about"></a>
-  <div class = "container-fluid about-section">
+  <div class = "about-section">
     <div class = "container about-text">
-        <h1>I aspire to become a full stack developer who knows how to tackle challenging problems and writes efficient code that everyone can understand.</h1>
+          <h1>I aspire to become a full stack developer who knows how to tackle challenging problems and writes efficient code that everyone can understand.</h1>
           <h2 class = "is-bolder">Who Am I?</h2>
           <h2>I am a recent systems engineering graduate of Simon Fraser University. Throughout my studies I learned how to collaborate with teammates, breakdown complex problems into manageable pieces, and not to give up when the going gets tough.
           I am constantly learning each day, developing my skills to reach my goal.</h2>
@@ -106,38 +107,60 @@
       <h1>Things I Want To Learn</h1>
         <p>Through the enormous advancements in technologies used in development and their capabilities, there are near endless things that I want to sink my teeth into. One of the most interesting fields for me is <span class = "is-bold">machine learning</span> because it opens up a whole new field of artificial intelligence.</p>
         <p>On the programming language side of things, I never had the opportunity to incorporate <span class = "is-bold"> Python</span> into my project and I want to be able to do so since it has a reputation of being a very versatile language.</p>
-        <p>Finally I would like to learn how to develop my own assets with tools such as <span class = "is-bold">Photoshop</span>, to use in future projects for the ability to customize them just the way I like them!</p>
+        <p>Finally, I would like to learn how to develop my own assets with tools such as <span class = "is-bold">Photoshop</span>, to use in future projects for the ability to customize them just the way I like!</p>
    </div>
  </div>
 
-  <div class = "container projects-section">
+  <div class = "container-fluid projects-section">
     <h1>Projects</h1>
-    <div class = "flex-container">
-      <div class = "project-flex-box1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class = "container flex-container">
+      <div class = "pure-g project-flex-box">
+        <h1>SC Builds Remastered</h1>
+          <div class = "project-image">
+              <img src = "IMAGES/applogo.png">
+          </div>
+          <div>
+            <p><span class = "is-bold">SC Builds Remastered</span> is an Android application that provides guidence to new and intermediate users for my favorite game of all time: <span class = "is-bold">Starcraft</span>. The game has a huge enterance barrier which discourages newer players from continuing on, and this app was designed to help them get over the hurdle. This was one of my first Android projects and is available on the Play Store!</p>
+          </div>
+          <div>
+            <button type="button" class="button-outline button-white">Github</button>
+            <button type="button" class="button-outline button-white">Play Store</button>
+          </div>
       </div>
-      <div class = "project-flex-box2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class = "pure-g project-flex-box">
+        <h1>Diet Diary</h1>
+          <div class = "project-image">
+              <img src = "IMAGES/diet-tracker-screenshot.png">
+          </div>
+          <div>
+            <p><span class = "is-bold">Diet Diary</span> is an easy to use web application that lets the users log their weight, meals of the day, and their exercise routine to present a tabular and a graphical view of the diet progress. The intention of the application is to aid the users in observing patterns in which periods they were able to lose the most weight and analyze their meal plans and exercises during those time frames to build a more efficient diet plan.</p>
+          <div>
+            <button type="button" class="button-outline button-white">Github</button>
+            <button type="button" class="button-outline button-white">View Application</button>
+          </div>
       </div>
-      <div class = "project-flex-box3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+
     </div>
   </div>
+</div>
 
-  <div class = "container contact-section">
-    <h1>Contact Me</h1>
-    <div class = "flex-container">
-      <div class = "project-flex-box1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class = "project-flex-box2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class = "project-flex-box3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
+  <div class = "contact-section">
+    <h1>Send Me A Message</h1>
+      <form action = "contact-form.php" method = "post">
+        <div class = "form-container">
+          <div class = "form-content">
+          <h1>Name:</h1>
+          <input name = "name" type="text" placeholder = "Your name">
+          <h1>Email:</h1>
+          <input name = "email" type="text" placeholder = "Your e-mail">
+          <h1>Subject:</h1>
+          <input name = "subject" type="text" placeholder = "Subject">
+          <h1>Message:</h1>
+          <textarea name = "message" placeholder = "Please write you message..."  rows = "8"> </textarea>
+            <button type="submit" class="button-outline button-white" name = "send-mail">Send Mail</button>
+        </div>
+        </div>
+      </form>
   </div>
 <script src="JS/main.js"></script>
 </body>
@@ -150,7 +173,6 @@
     </div>
     <div class = "footer-content">
         <p>Made by Billy Choi &copy; 2018</p>
-
   </div>
 </footer>
 </wrapper>
