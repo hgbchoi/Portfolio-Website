@@ -1,11 +1,11 @@
 <?php
 
-if (isset($_POST['submit'])){
+if (isset($_POST['send-mail'])){
 
   $name = $_POST['name'];
   $subject = $_POST['email'];
   $mailFrom = $_POST['subject'];
-  $message = $_POST['mesasge'];
+  $message = $_POST['messasge'];
 
   $mailTo = "hchoi92@hotmail.com";
   $headers = "From: ".$mailFrom;

@@ -70,3 +70,25 @@ $("#skills-button").click(function() {
         scrollTop: $("#skills").offset().top
     }, 500);
 });
+
+$("#projects-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+    }, 500);
+});
+
+$("#contact-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contacts").offset().top
+    }, 500);
+});
+
+var offset = $('#jumboButtonBox').offset().top;
+$(window).scroll(function(){
+  if ($(window).scrollTop() >  offset)   {
+        $('#jumboButtonBox').addClass('sticky');
+    } else {
+        $('#jumboButtonBox').removeClass('sticky');
+    }
+
+});

@@ -112,7 +112,10 @@
  </div>
 
   <div class = "container-fluid projects-section">
+    <a id = "projects" name = "projects"></a>
+
     <h1>Projects</h1>
+
     <div class = "container flex-container">
       <div class = "pure-g project-flex-box">
         <h1>SC Builds Remastered</h1>
@@ -123,8 +126,8 @@
             <p><span class = "is-bold">SC Builds Remastered</span> is an Android application that provides guidence to new and intermediate users for my favorite game of all time: <span class = "is-bold">Starcraft</span>. The game has a huge enterance barrier which discourages newer players from continuing on, and this app was designed to help them get over the hurdle. This was one of my first Android projects and is available on the Play Store!</p>
           </div>
           <div>
-            <button type="button" class="button-outline button-white">Github</button>
-            <button type="button" class="button-outline button-white">Play Store</button>
+          <a target = "_blank" href ="https://github.com/hgchoi92/Starcraft-Broodwar-Build-List"><button type="button" class="button-outline button-white">Github</button></a>
+          <a target = "_blank"  href ="https://play.google.com/store/apps/details?id=com.SCBuildList.billy.starcraftbroodwarbuildlist"><button type="button" class="button-outline button-white">Play Store</button></a>
           </div>
       </div>
       <div class = "pure-g project-flex-box">
@@ -135,17 +138,31 @@
           <div>
             <p><span class = "is-bold">Diet Diary</span> is an easy to use web application that lets the users log their weight, meals of the day, and their exercise routine to present a tabular and a graphical view of the diet progress. The intention of the application is to aid the users in observing patterns in which periods they were able to lose the most weight and analyze their meal plans and exercises during those time frames to build a more efficient diet plan.</p>
           <div>
-            <button type="button" class="button-outline button-white">Github</button>
-            <button type="button" class="button-outline button-white">View Application</button>
+            <a target = "_blank" href ="https://github.com/hgchoi92/Diet-Diary-JS"><button type="button" class="button-outline button-white">Github</button></a>
+            <a target = "_blank" href ="https://hgchoi92.github.io/Diet-Diary-JS/HTML/index.html"><button type="button" class="button-outline button-white">View Application</button></a>
           </div>
       </div>
-
     </div>
+    <div class = "pure-g project-flex-box">
+      <h1>Haptic Device Simulator</h1>
+        <div class = "project-image">
+            <img src = "IMAGES/haptic.png">
+        </div>
+        <div>
+          <p><span class = "is-bold">Haptic Device Simulator</span> was made to simulate the forward kinematics of a 6 degree of freedom robotic arm. It was coded with <span class = "is-bold">C++</span> using <span class = "is-bold">OpenGL</span> and the <span class = "is-bold">GLUT</span> library for rendering.</p>
+        <div>
+          <a target = "_blank" href ="https://github.com/hgchoi92/Haptic-Device-Forward-Kinematics-Simulator"><button type="button" class="button-outline button-white">Github</button></a>
+
+        </div>
+    </div>
+
+  </div>
   </div>
 </div>
 
   <div class = "contact-section">
     <h1>Send Me A Message</h1>
+    <a id = "contacts" name = "contacts"></a>
       <form action = "contact-form.php" method = "post">
         <div class = "form-container">
           <div class = "form-content">
@@ -157,7 +174,7 @@
           <input name = "subject" type="text" placeholder = "Subject">
           <h1>Message:</h1>
           <textarea name = "message" placeholder = "Please write you message..."  rows = "8"> </textarea>
-            <button type="submit" class="button-outline button-white" name = "send-mail">Send Mail</button>
+          <button type="submit" class="button-outline button-white" name = "send-mail">Send Mail</button>
         </div>
         </div>
       </form>
