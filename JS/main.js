@@ -26,7 +26,6 @@ $('#jumbo').animate({
 $('#jumboButtonBox').delay().animate({
   width: '0'
 },0).animate({
-
   opacity: '1',
   width: '100%'
 },1000)
@@ -61,34 +60,41 @@ $('#jumbo-button-4').delay(2400).animate({
 
 $("#about-button").click(function() {
     $('html, body').animate({
-        scrollTop: $("#about").offset().top
+        scrollTop: $("#about").position().top - $(window).height()*0.1
     }, 500);
 });
 
 $("#skills-button").click(function() {
     $('html, body').animate({
-        scrollTop: $("#skills").offset().top
+        scrollTop: $("#skills").position().top - $(window).height()*0.2
     }, 500);
 });
 
 $("#projects-button").click(function() {
     $('html, body').animate({
-        scrollTop: $("#projects").offset().top
+      scrollTop: $("#projects").position().top - $(window).height()*0.1
     }, 500);
 });
 
 $("#contact-button").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contacts").offset().top
+  $('html, body').animate({
+        scrollTop: $("#contacts").position().top - $(window).height()*0.1
     }, 500);
 });
 
-var offset = $('#jumboButtonBox').offset().top;
 $(window).scroll(function(){
-  if ($(window).scrollTop() >  offset)   {
+  if ($(window).scrollTop() > ($(window).height()*0.9)){
         $('#jumboButtonBox').addClass('sticky');
     } else {
         $('#jumboButtonBox').removeClass('sticky');
     }
 
+});
+
+$(window).scroll(function(){
+  if ($('#jumboButtonBox').hasClass('sticky')){
+    ($('.about-section').css('padding-top', 100));
+  } else {
+        ($('.about-section').css('padding-top', 0));
+  }
 });
