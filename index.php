@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <title>Billy Choi | Nice To Meet you!</title>
-
+  <title>Billy Choi | Developer Portfolio</title>
+  <link rel="shortcut icon" href="IMAGES/logo.png" type ="image/png">
   <link href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel = "stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -11,12 +11,16 @@
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link href = "CSS/styles.css" rel = "stylesheet" type ="text/css">
 </head>
 
 <body>
-<div class = "wrapper">
+<div class ="pre-load" id = "pre-load">
+  <img src = "IMAGES/Infinity-1s-200px.gif">
+</div>
+
+
+<div class = "wrapper" id = "wrapper">
 <div class ="jumbotron">
   <div class = "navigation">
     <nav class="navbar navbar-expand-sm navbar-dark py-0" id = "nav">
@@ -44,7 +48,7 @@
           </div>
 
 
-  </div>
+
   </div>
 
   <a id = "about" name = "about"></a>
@@ -52,10 +56,10 @@
     <div class = "container about-text">
           <h1>I aspire to become a full stack developer who knows how to tackle challenging problems and writes efficient code that everyone can understand.</h1>
           <h2 class = "is-bolder">Who Am I?</h2>
-          <h2>I am a recent systems engineering graduate of Simon Fraser University. Throughout my studies I learned how to collaborate with teammates, breakdown complex problems into manageable pieces, and not to give up when the going gets tough.
+          <h2>I am a systems engineering student attending Simon Fraser University and graduating in Summer 2018. Throughout my studies I learned how to collaborate with teammates, breakdown complex problems into manageable pieces, and persevere through difficult problems and situations.
           I am constantly learning each day, developing my skills to reach my goal.</h2>
           <h2 class = "is-bolder">What Do I Like About Software Development?</h2>
-          <h2>The idea of creating something useful that can be enjoyed by anyone across the globe with just a computer is absolutely astonishing to me. Throughout my internship as a quality assurance analyst, I gained first hand experience of the agile software development life cycle. The challenges that developers faced in the company each day were those that I thought I would love to be able to solve someday and this motivated me to start learning the neccessary technologies.
+          <h2>The idea of creating something useful that can be enjoyed by anyone across the globe with just a computer is absolutely compelling to me. Throughout my internship as a quality assurance analyst, I gained first hand experience of the agile software development life cycle. The challenges that developers faced in the company each day were those that I thought I would love to be able to solve someday and this motivated me to start learning the neccessary technologies.
           </h2>
     </div>
   </div>
@@ -64,7 +68,7 @@
   <div class = "container-fluid skills-table">
     <div class = "skills-flexbox">
       <a id = "skills" name = "skills"></a>
-      <h1>Things I Know</h1>
+      <h1>I Know..</h1>
 
       <h2>Languages & Libraries</h2>
       <p>HTML/CSS/Javascript, Java, C#, C++, OpenGL, JQuery, Bootstrap
@@ -99,15 +103,15 @@
 
     </div>
     <div class = "skills-flexbox">
-      <h1>Things I'm Learning</h1>
+      <h1>I'm Learning..</h1>
         <p>Since now that I have a basic working knowledge of the main languages used for front-end web development, I am currently focused on learning some of the server side languages such as <span class = "is-bold">PHP</span> and some of the database related techonologies such as <span class ="is-bold">MongoDB + MySQL Server</span>.
         <p>In order to gain familiarity with the technologies that are widely used in the market, I am also studying the Javascript library, <span class = "is-bold">React</span>.</p>
-        <p>I am also constantly learning new things about the technologies listed in the <span class = "is-bold">'Things I Know'</span> section through working on new projects such as this portfolio site!</p>
+        <p>I am also constantly learning new things about the technologies listed in the <span class = "is-bold">'I Know...'</span> section through working on new projects such as this portfolio site!</p>
     </div>
     <div class = "skills-flexbox">
-      <h1>Things I Want To Learn</h1>
-        <p>Through the enormous advancements in technologies used in development and their capabilities, there are near endless things that I want to sink my teeth into. One of the most interesting fields for me is <span class = "is-bold">machine learning</span> because it opens up a whole new field of artificial intelligence.</p>
-        <p>On the programming language side of things, I never had the opportunity to incorporate <span class = "is-bold"> Python</span> into my project and I want to be able to do so since it has a reputation of being a very versatile language.</p>
+      <h1>I Want to Learn..</h1>
+        <p>Through the enormous advancements in technologies used in development and their capabilities, there are near endless things that I want to learn. One of the most interesting fields for me is <span class = "is-bold">machine learning</span> because the field is growing very rapidly and finding a lot of use cases.</p>
+        <p>On the programming language side, I never had the opportunity to incorporate <span class = "is-bold"> Python</span> into my project and I want to be able to do so since it has a reputation of being a very versatile language.</p>
         <p>Finally, I would like to learn how to develop my own assets with tools such as <span class = "is-bold">Photoshop</span>, to use in future projects for the ability to customize them just the way I like!</p>
    </div>
  </div>
@@ -191,6 +195,7 @@
     </div>
     <div class = "footer-content">
         <p>Made by Billy Choi &copy; 2018</p>
+  </div>
   </div>
 </footer>
 </wrapper>

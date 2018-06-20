@@ -1,3 +1,8 @@
+$('#wrapper').css("display", "none");
+
+$(window).on("load", function() {
+$('#pre-load').fadeOut(100);
+$('#wrapper').delay(200).fadeIn(200);
 $('#jumbotexth1').delay(1000).animate({
     top: '+50',
 }, 0).animate({
@@ -97,4 +102,6 @@ $(window).scroll(function(){
   } else {
         ($('.about-section').css('padding-top', 0));
   }
+});
+
 });
