@@ -128,7 +128,7 @@
               <img src = "IMAGES/applogo.png">
           </div>
           <div>
-            <p><span class = "is-bold">SC Builds Remastered</span> is an Android application that provides guidence to new and intermediate users for my favorite game of all time: <span class = "is-bold">Starcraft</span>. The game has a huge enterance barrier which discourages newer players from continuing on, and this app was designed to help them get over the hurdle. This was one of my first Android projects and is available on the Play Store!</p>
+            <p><span class = "is-bold">SC Builds Remastered</span> is an Android application that provides guidance to new and intermediate users for my favorite game of all time: <span class = "is-bold">Starcraft</span>. The game has a huge entrance barrier which discourages newer players from continuing on, and this app was designed to help them get over the hurdle. This was one of my first Android projects and is available on the Play Store!</p>
           </div>
           <div>
           <a target = "_blank" href ="https://github.com/hgchoi92/Starcraft-Broodwar-Build-List"><button type="button" class="button-outline button-white">Github</button></a>
