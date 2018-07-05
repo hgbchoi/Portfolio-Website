@@ -9,12 +9,12 @@ body{
   text-align:center;
   flex-direction: column;
   justify-content: center;
-  background-color: #333333;
 }
 
 .pre-load img {
   width: 200px;
   margin: auto;
+
 }
 .sticky {
   position: fixed;
@@ -42,7 +42,7 @@ body{
 
 .jumbotron{
 
-  background:url("../IMAGES/banner-image3.jpg") no-repeat center center;
+  background:url("../IMAGES/banner-image4.jpg") no-repeat center center;
   object-fit: fill;
   padding:0;
   padding-top:50px !important;
@@ -442,6 +442,45 @@ margin-bottom: 100px;
   border-radius:5px;
 }
 
+.success {
+
+background-color: green;
+border-radius: 5px;
+color: white;
+font-size: 20px;
+text-align:center;
+padding:10px;
+
+}
+
+.failed {
+
+background-color: red;
+border-radius: 5px;
+color: white;
+font-size: 20px;
+text-align:center;
+padding:10px;
+
+}
+
+
+.success p{
+
+  margin-bottom: 0;
+
+}
+
+.failed p{
+
+  margin-bottom: 0;
+
+}
+
+.error {
+    border: 3px solid red;
+    }
+
 @media only screen and (max-width: 900px){
 
   .jumbo-button-box, .text-jumbotron{
@@ -500,4 +539,4 @@ margin-bottom: 100px;
     font-size: 30px;
   }
 
-}
+  }

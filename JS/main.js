@@ -104,4 +104,111 @@ $(window).scroll(function(){
   }
 });
 
+//Submit Form by ajax & clientside validation
+
+var validName;
+var validEmail;
+var valiSubject;
+var validContent;
+
+function validateEmail(){
+  var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var email = $('#form-email').val();
+
+  if (!regex.test(email) || email == ''){
+    validEmail = false;
+    $('#form-email').addClass("error");
+  } else {
+    validEmail = true;
+    $('#form-email').removeClass("error");
+  }
+}
+
+function validateName(){
+  var regex = /^[a-zA-Z]/;
+  var name = $('#form-name').val();
+
+    if (!regex.test(name) || name == ''){
+      validName = false;
+      $('#form-name').addClass("error");
+    } else {
+      validName = true;
+      $('#form-name').removeClass("error");
+    }
+
+}
+
+function validateSubject(){
+
+  var subject = $('#form-subject').val();
+
+    if (subject == ''){
+      validSubject = false;
+      $('#form-subject').addClass("error");
+    } else {
+      validSubject = true;
+      $('#form-subject').removeClass("error");
+    }
+
+}
+
+function validateMessage(){
+
+  var content = $('#form-content').val();
+
+    if (content == ''){
+      validContent = false;
+      $('#form-content').addClass("error");
+    } else {
+      validContent = true;
+      $('#form-content').removeClass("error");
+    }
+}
+
+$("#form-email").focusout(function(){
+  validateEmail();
+});
+
+$("#form-name").focusout(function(){
+  validateName();
+});
+
+$("#form-subject").focusout(function(){
+  validateSubject();
+});
+
+$("#form-content").focusout(function(){
+  validateMessage();
+});
+
+$('form').submit(function(event){
+
+event.preventDefault();
+
+validateEmail();
+validateName();
+validateSubject();
+validateMessage();
+
+if(validName && validEmail && validSubject && validContent){
+
+$.ajax({
+  type:"POST",
+  url: "contact-form.php",
+  data: $('#contactForm').serialize(),
+  success:function(data){
+    $(".failed").css("display", "none");
+    $(".success").fadeIn(1000).delay(2000).fadeOut(1000);
+
+}});
+} else {
+  $(".success").css("display", "none");
+    $(".failed").fadeIn(1000).delay(2000).fadeOut(1000);
+
+    return false;
+}
+
+});
+
+
 });

@@ -17,6 +17,7 @@
 <body>
 <div class ="pre-load" id = "pre-load">
   <img src = "IMAGES/Infinity-1s-200px.gif">
+  <h1>LOADING...</h1>
 </div>
 
 
@@ -59,7 +60,7 @@
           <h2>I am a systems engineering student attending Simon Fraser University and graduating in Summer 2018. Throughout my studies I learned how to collaborate with teammates, breakdown complex problems into manageable pieces, and persevere through difficult problems and situations.
           I am constantly learning each day, developing my skills to reach my goal.</h2>
           <h2 class = "is-bolder">What Do I Like About Software Development?</h2>
-          <h2>The idea of creating something useful that can be enjoyed by anyone across the globe with just a computer is absolutely compelling to me. Throughout my internship as a quality assurance analyst, I gained first hand experience of the agile software development life cycle. The challenges that developers faced in the company each day were those that I thought I would love to be able to solve someday and this motivated me to start learning the neccessary technologies.
+          <h2>The idea of creating something useful that can be enjoyed by anyone across the globe with just a computer is absolutely compelling to me. Throughout my internship as a quality assurance analyst, I gained first hand experience of the agile software development life cycle. The challenges that developers faced in the company each day were those that I thought I would love to be able to solve someday and this motivated me to start learning the necessary technologies.
           </h2>
     </div>
   </div>
@@ -104,7 +105,7 @@
     </div>
     <div class = "skills-flexbox">
       <h1>I'm Learning..</h1>
-        <p>Since now that I have a basic working knowledge of the main languages used for front-end web development, I am currently focused on learning some of the server side languages such as <span class = "is-bold">PHP</span> and some of the database related techonologies such as <span class ="is-bold">MongoDB + MySQL Server</span>.
+        <p>Since now that I have a basic working knowledge of the main languages used for front-end web development, I am currently focused on learning some of the server side languages such as <span class = "is-bold">PHP</span> and relational databases using <span class ="is-bold">MySQL</span>.
         <p>In order to gain familiarity with the technologies that are widely used in the market, I am also studying the Javascript library, <span class = "is-bold">React</span>.</p>
         <p>I am also constantly learning new things about the technologies listed in the <span class = "is-bold">'I Know...'</span> section through working on new projects such as this portfolio site!</p>
     </div>
@@ -168,17 +169,23 @@
   <div class = "contact-section">
     <a id = "contacts" name = "contacts"></a>
     <h1>Send Me A Message</h1>
-      <form action = "contact-form.php" method = "post">
+      <form id = "contactForm" action = "contact-form.php" method = "post">
         <div class = "form-container">
           <div class = "form-content">
+          <div class = "success is-hidden">
+              <p>Message Sent. Thank you!</p>
+          </div>
+          <div class = "failed is-hidden">
+              <p>Please adjust the highlighted fields!</p>
+          </div>
           <h1>Name:</h1>
-          <input name = "name" type="text" placeholder = "Your name">
+          <input name = "name" type="text" id = "form-name" placeholder = "Your name">
           <h1>Email:</h1>
-          <input name = "email" type="text" placeholder = "Your e-mail">
+          <input name = "email" type="text" id = "form-email" placeholder = "Your e-mail">
           <h1>Subject:</h1>
-          <input name = "subject" type="text" placeholder = "Subject">
+          <input name = "subject" type="text" id = "form-subject" placeholder = "Subject">
           <h1>Message:</h1>
-          <textarea name = "message" placeholder = "Please write you message..."  rows = "8"> </textarea>
+          <textarea name = "message" placeholder = "Please write your message!" id = "form-content"  rows = "8"></textarea>
           <button type="submit" class="button-outline button-white" name = "send-mail">Send Mail</button>
         </div>
         </div>
