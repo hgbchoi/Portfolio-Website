@@ -54,6 +54,9 @@
 
   <a id = "about" name = "about"></a>
   <div class = "about-section">
+  <div class = "my-image">
+      <img src = "IMAGES/me.jpg" width = "300" height = "300">
+  </div>
     <div class = "container about-text">
           <h1>I aspire to become a full stack developer who knows how to tackle challenging problems and writes efficient code that everyone can understand.</h1>
           <h2 class = "is-bolder">Who Am I?</h2>
@@ -72,9 +75,11 @@
       <h1>I Know..</h1>
 
       <h2>Languages & Libraries</h2>
-      <p>HTML/CSS/Javascript, Java, C#, C++, OpenGL, JQuery, Bootstrap
+      <p>HTML/CSS/Javascript, Java, C#, C++, OpenGL, JQuery, Bootstrap, PHP, Sass
       </p>
 
+      <h2>Database</h2>
+      <p>Phpmyadmin, Mysqli, Sqlite, PDO</p>
 
       <h2>Project Management</h2>
       <ul>
@@ -105,14 +110,14 @@
     </div>
     <div class = "skills-flexbox">
       <h1>I'm Learning..</h1>
-        <p>Since now that I have a basic working knowledge of the main languages used for front-end web development, I am currently focused on learning some of the server side languages such as <span class = "is-bold">PHP</span> and relational databases using <span class ="is-bold">MySQL</span>.
+        <p>Currently I am in a team to create a automatic interior painting robot. In order to avoid areas that should not be painted, we need an image processing algorithm that captures an image with a camera and detect masking tape on the wall. I am currently working on this feature using <span class = "is-bold">Python</span> as the language of choice.</p>
         <p>In order to gain familiarity with the technologies that are widely used in the market, I am also studying the Javascript library, <span class = "is-bold">React</span>.</p>
+
         <p>I am also constantly learning new things about the technologies listed in the <span class = "is-bold">'I Know...'</span> section through working on new projects such as this portfolio site!</p>
     </div>
     <div class = "skills-flexbox">
       <h1>I Want to Learn..</h1>
         <p>Through the enormous advancements in technologies used in development and their capabilities, there are near endless things that I want to learn. One of the most interesting fields for me is <span class = "is-bold">machine learning</span> because the field is growing very rapidly and finding a lot of use cases.</p>
-        <p>On the programming language side, I never had the opportunity to incorporate <span class = "is-bold"> Python</span> into my project and I want to be able to do so since it has a reputation of being a very versatile language.</p>
         <p>Finally, I would like to learn how to develop my own assets with tools such as <span class = "is-bold">Photoshop</span>, to use in future projects for the ability to customize them just the way I like!</p>
    </div>
  </div>
@@ -132,7 +137,7 @@
             <p><span class = "is-bold">SC Builds Remastered</span> is an Android application that provides guidance to new and intermediate users for my favorite game of all time: <span class = "is-bold">Starcraft</span>. The game has a huge entrance barrier which discourages newer players from continuing on, and this app was designed to help them get over the hurdle. This was one of my first Android projects and is available on the Play Store!</p>
           </div>
           <div>
-          <a target = "_blank" href ="https://github.com/hgchoi92/Starcraft-Broodwar-Build-List"><button type="button" class="button-outline button-white">Github</button></a>
+          <a target = "_blank" href ="https://github.com/hgbchoi/Starcraft-Broodwar-Build-List"><button type="button" class="button-outline button-white">Github</button></a>
           <a target = "_blank"  href ="https://play.google.com/store/apps/details?id=com.SCBuildList.billy.starcraftbroodwarbuildlist"><button type="button" class="button-outline button-white">Play Store</button></a>
           </div>
       </div>
@@ -144,8 +149,8 @@
           <div>
             <p><span class = "is-bold">Diet Diary</span> is an easy to use web application that lets the users log their weight, meals of the day, and their exercise routine to present a tabular and a graphical view of the diet progress. The intention of the application is to aid the users in observing patterns in which periods they were able to lose the most weight and analyze their meal plans and exercises during those time frames to build a more efficient diet plan.</p>
           <div>
-            <a target = "_blank" href ="https://github.com/hgchoi92/Diet-Diary-JS"><button type="button" class="button-outline button-white">Github</button></a>
-            <a target = "_blank" href ="https://hgchoi92.github.io/Diet-Diary-JS/HTML/index.html"><button type="button" class="button-outline button-white">View Application</button></a>
+            <a target = "_blank" href ="https://github.com/hgbchoi/Diet-Diary-JS"><button type="button" class="button-outline button-white">Github</button></a>
+            <a target = "_blank" href ="https://hgbchoi.github.io/Diet-Diary-JS/HTML/index.html"><button type="button" class="button-outline button-white">View Application</button></a>
           </div>
       </div>
     </div>
@@ -157,7 +162,7 @@
         <div>
           <p><span class = "is-bold">Haptic Device Simulator</span> was made to simulate the forward kinematics of a 6 degree of freedom robotic arm. It was coded with <span class = "is-bold">C++</span> using <span class = "is-bold">OpenGL</span> and the <span class = "is-bold">GLUT</span> library for rendering.</p>
         <div>
-          <a target = "_blank" href ="https://github.com/hgchoi92/Haptic-Device-Forward-Kinematics-Simulator"><button type="button" class="button-outline button-white">Github</button></a>
+          <a target = "_blank" href ="https://github.com/hgbchoi/Haptic-Device-Forward-Kinematics-Simulator"><button type="button" class="button-outline button-white">Github</button></a>
 
         </div>
     </div>
@@ -197,9 +202,10 @@
   <div class = "footer-container">
     <div class = "social-media-container">
         <a target="_blank" href ="https://www.linkedin.com/in/billy-hyun-gyu-choi-75121411b/" class = "fa fa-linkedin"></a>
-        <a target="_blank" href ="https://github.com/hgchoi92" class = "fa fa-github"></a>
+        <a target="_blank" href ="https://github.com/hgbchoi" class = "fa fa-github"></a>
         <a target="_blank" href ="mailto:dinner0000@gmail.com" class = "fa fa-envelope"></a>
     </div>
+
     <div class = "footer-content">
         <p>Made by Billy Choi &copy; 2018</p>
   </div>
