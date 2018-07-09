@@ -198,12 +198,12 @@ $.ajax({
   data: $('#contactForm').serialize(),
   success:function(data){
     $(".failed").css("display", "none");
-    $(".success").fadeIn(1000).delay(2000).fadeOut(1000);
+    $(".success").fadeIn(200).delay(500).fadeOut(200);
 
 }});
 } else {
   $(".success").css("display", "none");
-    $(".failed").fadeIn(1000).delay(2000).fadeOut(1000);
+    $(".failed").fadeIn(200).delay(500).fadeOut(200);
 
     return false;
 }

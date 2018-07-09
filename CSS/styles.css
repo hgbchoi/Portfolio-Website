@@ -9,6 +9,7 @@ body{
   text-align:center;
   flex-direction: column;
   justify-content: center;
+  background-color:#333333;
 }
 
 .pre-load img {
@@ -73,6 +74,7 @@ body{
   text-align:center;
   margin-bottom:0;
   margin-top:auto;
+  z-index:1;
 }
 
 .is-centered{
@@ -152,6 +154,8 @@ body{
   overflow:hidden;
 }
 
+
+
 .about-text{
   color:white;
   margin-left: auto;
@@ -163,7 +167,7 @@ body{
   text-align:center;
   font-size:30px;
   font-style:bold;
-  margin-top:150px;
+  margin-top:75px;
   margin-bottom: 60px;
   overflow: hidden
 }
@@ -296,6 +300,7 @@ margin-bottom: 100px;
 
   background-color:#333333;
   overflow: auto;
+  position: relative;
   color: white;
 }
 
@@ -304,6 +309,8 @@ margin-bottom: 100px;
   text-align: center;
   width:100%;
 }
+
+
 
 .social-media-container{
   width:50%;
@@ -397,13 +404,22 @@ margin-bottom: 100px;
   border-radius:20px;
 }
 
+.my-image{
+  text-align:center;
+  margin-top:75px;
+}
+
+.about-section img {
+  width:15%;
+  height:15%;
+  border-radius:50%;
+  border: solid white 3px;
+}
+
 .project-flex-box button{
   margin:10px;
   margin-left: 0;
 }
-
-
-
 
 .contact-section {
   margin-bottom:50px;
@@ -505,6 +521,7 @@ padding:10px;
   .projects-section{
     display:block;
     padding:0;
+
   }
 
   .project-flex-box{
@@ -536,7 +553,16 @@ padding:10px;
   }
 
   h1 {
-    font-size: 30px;
-  }
+    font-size: 20px;
+    padding-top: 20px;
 
   }
+
+  .about-section img {
+    width:40%;
+    height:40%;
+    border-radius:50%;
+    border: solid white 3px;
+  }
+
+}
